@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dosum(){
+            a=document.getElementById("no1").ariaValueText
+            b=document.getElementById("no2").ariaValueText
+            c=parseInt(a)+parseInt(b)
+            document.getElementById("ans").innerHTML = "Sum is "+c
+        }
+    </script>
+</head>
+<body>
+    Enter a number : <input type="text" id="no1">
+    <br>
+    Enter a number : <input type="text" id="no2">
+    <button onclick="dosum()" >Submit</button>
+    <p id="ans"></p>
+
+</body>
+</html>
